@@ -5,6 +5,7 @@ resource "aws_vpc" "this" {
     Name = "${var.env}-vpc"
     Environment = var.env
     provisioner = "terraform"
+    project     = "finance"
    }
 }
 
